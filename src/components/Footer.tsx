@@ -5,6 +5,7 @@ const footerStyle: React.CSSProperties = {
   color: '#fff',
   padding: '20px',
   textAlign: 'center',
+  marginTop: 'auto',
 };
 
 const socialLinksStyle: React.CSSProperties = {

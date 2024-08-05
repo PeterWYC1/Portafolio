@@ -20,6 +20,7 @@ const sectionStyle: React.CSSProperties = {
   padding: '50px 20px',
   textAlign: 'center',
   backgroundColor: '#f7f7f7',
+  flex: 1,
 };
 
 const h2Style: React.CSSProperties = {

@@ -1,15 +1,18 @@
 import React from 'react';
 
-const heroStyle: React.CSSProperties = {
+const perfilStyle: React.CSSProperties = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  height: '100vh',
+  height: '40ch', 
+  width: '100%',  
   backgroundColor: '#282c34',
   color: 'white',
   textAlign: 'center',
   padding: '0 20px',
+  margin: 0,  
+  overflow: 'hidden', 
 };
 
 const h1Style: React.CSSProperties = {
@@ -39,8 +42,8 @@ const buttonStyle: React.CSSProperties = {
 
 const HeroSection: React.FC = () => {
   return (
-    <div style={heroStyle}>
-      <h1 style={h1Style}>Tu Nombre</h1>
+    <div style={perfilStyle}>
+      <h1 style={h1Style}>Pedro Sierra</h1>
       <h2 style={h2Style}>Ingeniero de Sistemas</h2>
       <p style={pStyle}>Breve descripción sobre ti.</p>
       <button style={buttonStyle}>Contacto</button>
