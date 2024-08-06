@@ -1,7 +1,7 @@
 
+import Footer from './components/Footer';
 import Perfil from './components/Perfil';
 import ProjectsSection from './components/Project';
-import Footer from './components/Footer';
 import './index.css';
 
 const appStyle: React.CSSProperties = {
@@ -21,7 +21,6 @@ const App: React.FC = () => {
       <div style={contentStyle}>
         <Perfil />
         <ProjectsSection />
-        
       </div>
       <Footer />
     </div>

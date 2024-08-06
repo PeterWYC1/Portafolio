@@ -1,4 +1,4 @@
-/* Eliminar márgenes y rellenos por defecto */
+
 * {
  margin: 0;
  padding: 0;
@@ -11,8 +11,37 @@ html, body {
 }
 
 #root {
+ 
  height: 100%;
  width: 100%;
  min-height: 100vh;
 }
 
+@media (max-width: 600px) {
+ .hero-section {
+   height: auto;
+   padding: 20px 10px;
+ }
+
+ .hero-section h1 {
+   font-size: 2em;
+ }
+
+ .hero-section h2 {
+   font-size: 1.5em;
+ }
+
+ .hero-section p {
+   font-size: 1em;
+ }
+
+ .hero-section img {
+   width: 150px;
+   height: 150px;
+ }
+
+ .hero-section button {
+   width: 40%;
+   margin-top: 20px;
+ }
+}
