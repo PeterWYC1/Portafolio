@@ -14,6 +14,8 @@ const perfilStyle: React.CSSProperties = {
   color: 'white',
   textAlign: 'center',
   padding: '20px',
+  borderBottomRightRadius: '15px',
+  borderBottomLeftRadius: '15px',
   overflow: 'hidden',
 };
 
