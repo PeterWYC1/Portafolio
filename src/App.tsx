@@ -1,7 +1,7 @@
 
 import Footer from './components/Footer';
 import Perfil from './components/Perfil';
-import ProjectsSection from './components/Project';
+import ProjectsSection from './components/project';
 import './index.css';
 
 const appStyle: React.CSSProperties = {
