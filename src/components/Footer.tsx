@@ -27,7 +27,7 @@ const aHoverStyle: React.CSSProperties = {
 const Footer: React.FC = () => {
   return (
     <footer style={footerStyle}>
-      <p>Contacto: tu-email@example.com</p>
+      <p>Contacto: Pedro.sierra68@eia.edu.co</p>
       <div style={socialLinksStyle}>
         <a
           href="https://linkedin.com/in/tuusuario"
