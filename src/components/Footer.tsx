@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
           LinkedIn
         </a>
         <a
-          href="https://github.com/tuusuario"
+          href="https://github.com/PeterWYC1"
           target="_blank"
           rel="noopener noreferrer"
           style={aStyle}
