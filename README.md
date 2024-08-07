@@ -37,8 +37,8 @@ El portafolio consta de varias secciones:
       - Npm Install
       - Npm Run Dev
    2. Con Yarn
-    - Yarn Install
-    - Yarn Dev
+     - Yarn Install
+     - Yarn Dev
   
    
    
