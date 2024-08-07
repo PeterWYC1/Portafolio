@@ -8,28 +8,24 @@ import reLogo from './img/reLogo.png';
 import rLogo from './img/rLogo.png';
 import servLogo from './img/servLogo.png';
 import sqlLogo from './img/sqlLogo.png';
+import sqLogo from './img/sqLogo.png';
+import dbDig from './img/dbDig.png';
+import pyLog from './img/pyLog.png';
 
 const abiLogos = [
   rLogo,
   fLogo,
   myLogo,
   sqlLogo,
+  pyLog,
 ];
 
-const abilityStyle: React.CSSProperties = {
-  width: '80px',
-  height: '80px',
-  objectFit: 'contain',
-  border: '2px solid #fff',
-  borderRadius: '50%',
-  
-};
 
 
 const projects = [
   {
     title: 'ParkHub',
-    description:' ParkHub fue un proyecto de un software para gestion de parqueaderos, permite realizar reservas dentro de instituciones que empleen nuestros servicios, mi papel en el proyecto fue de desarrollador front end',
+    description:' ParkHub fue un proyecto de un software para gestion de parqueaderos, permite realizar reservas dentro de instituciones que empleen nuestros servicios, mi papel en el proyecto fue de desarrollador front end',
     imageUrl: logo2,
     link: 'https://github.com/PeterWYC1/ParkHub2.0',
     additionalImageUrl: pPark,
@@ -55,16 +51,15 @@ const projects = [
     ],
   },
   {
-    title: 'Recircular',
-    description: ' ParkHub fue un proyecto de un software para gestion de parqueaderos, permite realizar reservas dentro de instituciones que empleen nuestros servicios, mi papel en el proyecto fue de desarrollador front end',
+    title: 'Hospital DB',
+    description: 'Hospital DB es una base de datos donde se emuló un Hospital de la vida real, es una base de datos normalizada, yo cumplí el rol de DB manager, me encargué de crear tablas, organizarlas y hacer los queries que requería nuestro sistema',
     imageUrl: servLogo,
     link: 'https://github.com/Tomaslopera/Hospital_DB',
-    additionalImageUrl: pRecircular,
+    additionalImageUrl: dbDig,
     nn: 'Tecnologías',
     techLogos: [
-      rLogo,
-      fLogo,
-      myLogo,
+      servLogo,
+      sqLogo,
     ],
   },
 ];
@@ -87,9 +82,12 @@ const techLogoStyle: React.CSSProperties = {
 const sectionStyle: React.CSSProperties = {
   padding: '50px 20px',
   textAlign: 'center',
-  backgroundColor: '#e0f2f1',
+  backgroundColor: '#fff',
   flex: 1,
+  maxWidth: '1200px',
+  margin: '0 auto',
 };
+
 const additionalImgStyle: React.CSSProperties = {
   width: '100%',
   height: 'auto',
@@ -101,6 +99,7 @@ const additionalImgStyle: React.CSSProperties = {
 const h2Style: React.CSSProperties = {
   fontSize: '2.5em',
   marginBottom: '20px',
+  marginTop: '40px',
 };
 
 const gridStyle: React.CSSProperties = {
@@ -112,11 +111,11 @@ const gridStyle: React.CSSProperties = {
 
 const cardStyle: React.CSSProperties = {
   backgroundColor: '#fff',
-  border: '1px solid #ddd',
+  border: '1px solid #fff',
   borderRadius: '8px',
   padding: '20px',
   textAlign: 'left',
-  boxShadow: '8px 16px 16px rgba(0, 0, 0, 0.2)',
+  boxShadow: '8px 16px 16px rgba(0, 0, 0, 0.1)',
   transition: 'transform 0.4s',
 };
 
@@ -128,6 +127,11 @@ const imgStyle: React.CSSProperties = {
 
 const h3Style: React.CSSProperties = {
   fontSize: '1.5em',
+  margin: '10px 0',
+};
+
+const h4Style: React.CSSProperties = {
+  fontSize: '1.8em',
   margin: '10px 0',
 };
 
@@ -158,9 +162,10 @@ const cardHoverStyle: React.CSSProperties = {
 const ProjectsSection: React.FC = () => {
   return (
     <div style={sectionStyle}>
+      <h4 style={h4Style}>Skills</h4>
         <div style={techLogosStyle}>
               {abiLogos.map((logo, i) => (
-                <img key={i} src={logo} alt={`Logo ${i + 1}`} style={abilityStyle} />
+                <img key={i} src={logo} alt={`Logo ${i + 1}`} className="ability-image" />
               ))}
             </div>
       <h2 style={h2Style}>Mis Proyectos</h2>

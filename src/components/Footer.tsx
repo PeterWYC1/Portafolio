@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const footerStyle: React.CSSProperties = {
   backgroundColor: '#11111f',
@@ -18,10 +20,16 @@ const socialLinksStyle: React.CSSProperties = {
 const aStyle: React.CSSProperties = {
   color: '#fff',
   textDecoration: 'none',
+  marginRight:'15px',
+  marginTop:'10px'
 };
 
 const aHoverStyle: React.CSSProperties = {
   textDecoration: 'underline' ,
+};
+const iconStyle: React.CSSProperties = {
+  
+  marginLeft: '10px'
 };
 
 const Footer: React.FC = () => {
@@ -30,14 +38,15 @@ const Footer: React.FC = () => {
       <p>Contacto: Pedro.sierra68@eia.edu.co</p>
       <div style={socialLinksStyle}>
         <a
-          href="https://linkedin.com/in/tuusuario"
+          href="https://www.instagram.com/pedro_sierra_a/"
           target="_blank"
           rel="noopener noreferrer"
           style={aStyle}
           onMouseOver={(e) => (e.currentTarget.style.textDecoration = aHoverStyle.textDecoration as string)}
           onMouseOut={(e) => (e.currentTarget.style.textDecoration = aStyle.textDecoration as string)}
         >
-          LinkedIn
+          Instagram
+          <FontAwesomeIcon icon={faInstagram} style={iconStyle}/>
         </a>
         <a
           href="https://github.com/PeterWYC1"
@@ -47,7 +56,9 @@ const Footer: React.FC = () => {
           onMouseOver={(e) => (e.currentTarget.style.textDecoration = aHoverStyle.textDecoration as string)}
           onMouseOut={(e) => (e.currentTarget.style.textDecoration = aStyle.textDecoration as string)}
         >
+          
           GitHub
+          <FontAwesomeIcon icon={faGithub} style={iconStyle} />
         </a>
         {/* Añade más enlaces a redes sociales aquí */}
       </div>
