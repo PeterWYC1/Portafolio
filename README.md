@@ -33,10 +33,10 @@ El portafolio consta de varias secciones:
    cd portafolio
 
 2. **En la carpeta APP/**
- Con NPM
+   1. Con NPM
       - Npm Install
       - Npm Run Dev
- Con Yarn
+   2. Con Yarn
     - Yarn Install
     - Yarn Dev
   
