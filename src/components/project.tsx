@@ -82,7 +82,7 @@ const techLogoStyle: React.CSSProperties = {
 const sectionStyle: React.CSSProperties = {
   padding: '50px 20px',
   textAlign: 'center',
-  backgroundColor: '#e0f2f1',
+  backgroundColor: '#fff',
   flex: 1,
   maxWidth: '1200px',
   margin: '0 auto',
@@ -115,7 +115,7 @@ const cardStyle: React.CSSProperties = {
   borderRadius: '8px',
   padding: '20px',
   textAlign: 'left',
-  boxShadow: '8px 16px 16px rgba(0, 0, 0, 0.2)',
+  boxShadow: '8px 16px 16px rgba(0, 0, 0, 0.15)',
   transition: 'transform 0.4s',
 };
 

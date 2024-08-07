@@ -15,7 +15,7 @@ const hobbies = [
 const sectionStyle: React.CSSProperties = {
   padding: '50px 20px',
   textAlign: 'center',
-  backgroundColor: '#e0f2f1',
+  backgroundColor: '#fff',
   flex: 1,
   display: 'flex',
   flexDirection: 'column',
@@ -57,7 +57,7 @@ const h2Style: React.CSSProperties = {
 
 const cardStyle: React.CSSProperties = {
   backgroundColor: '#11111f',
- border: '1px solid #ddd',
+ border: '1px solid #fff',
  borderRadius: '15px',
  padding: '20px',
  boxShadow: '8px 16px 16px rgba(0, 0, 0, 0.2)',
