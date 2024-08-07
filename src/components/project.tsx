@@ -84,7 +84,10 @@ const sectionStyle: React.CSSProperties = {
   textAlign: 'center',
   backgroundColor: '#e0f2f1',
   flex: 1,
+  maxWidth: '1200px',
+  margin: '0 auto',
 };
+
 const additionalImgStyle: React.CSSProperties = {
   width: '100%',
   height: 'auto',

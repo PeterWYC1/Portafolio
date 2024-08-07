@@ -17,11 +17,20 @@ const sectionStyle: React.CSSProperties = {
   textAlign: 'center',
   backgroundColor: '#e0f2f1',
   flex: 1,
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
 };
+const containerStyle: React.CSSProperties = {
+ maxWidth: '1200px',
+ width: '100%',
+ margin: '0 auto',
+};
+
 
 const gridStyle: React.CSSProperties = {
   display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
+  gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
   gap: '20px',
   justifyContent: 'center',
 };
@@ -31,7 +40,7 @@ const imgStyle: React.CSSProperties = {
   width: '100%',
   height: 'auto',
   borderRadius: '12px 12px ', // Redondear las esquinas superiores
-
+  marginBottom: '15px'
 };
 
 const h3Style: React.CSSProperties = {
@@ -46,25 +55,33 @@ const h2Style: React.CSSProperties = {
  margin: '10px ',
 };
 
-
+const cardStyle: React.CSSProperties = {
+  backgroundColor: '#11111f',
+ border: '1px solid #ddd',
+ borderRadius: '15px',
+ padding: '20px',
+ boxShadow: '8px 16px 16px rgba(0, 0, 0, 0.2)',
+ transition: 'transform 0.4s',
+};
 
 const HobbiesSection: React.FC = () => {
   return (
     <div style={sectionStyle}>
-      <h2 style={h2Style}>Mis Hobbies </h2>
-      <div style={gridStyle}>
-        {hobbies.map((hobby, index) => (
-          <div
-            key={index}
-            className="card-style"
-            onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.05)')}
-            onMouseOut={(e) => (e.currentTarget.style.transform = 'none')}
-          >
-           <h3 style={h3Style}>{hobby.title}</h3>
-            <img src={hobby.imageUrl} alt={hobby.title} style={imgStyle} />
-           
-          </div>
-        ))}
+          <div style={containerStyle}>
+        <h2 style={h2Style}>Mis Hobbies</h2>
+        <div style={gridStyle}>
+          {hobbies.map((hobby, index) => (
+            <div
+              key={index}
+              style={cardStyle}
+              onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.05)')}
+              onMouseOut={(e) => (e.currentTarget.style.transform = 'none')}
+            >
+              <h3 style={h3Style}>{hobby.title}</h3>
+              <img src={hobby.imageUrl} alt={hobby.title} style={imgStyle} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

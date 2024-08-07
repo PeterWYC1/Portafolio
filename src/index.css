@@ -25,15 +25,7 @@ html, body {
   border-radius: 50%;
 }
 
-.card-style {
-  background-color: #11111f;
-  border: 1px solid #ddd;
-  border-radius: 15px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 8px 16px 16px rgba(0, 0, 0, 0.2);
-  transition: transform 0.4s;
-}
+
 
 @media (max-width: 600px) {
 
