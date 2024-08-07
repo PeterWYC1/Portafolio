@@ -111,11 +111,11 @@ const gridStyle: React.CSSProperties = {
 
 const cardStyle: React.CSSProperties = {
   backgroundColor: '#fff',
-  border: '1px solid #ddd',
+  border: '1px solid #fff',
   borderRadius: '8px',
   padding: '20px',
   textAlign: 'left',
-  boxShadow: '8px 16px 16px rgba(0, 0, 0, 0.15)',
+  boxShadow: '8px 16px 16px rgba(0, 0, 0, 0.1)',
   transition: 'transform 0.4s',
 };
 
